@@ -88,7 +88,7 @@ export const EditTask = () => {
         setClicked(!clicked);
         setOpen(false);
     };
-     const handleCancel = (e: React.MouseEvent<HTMLButtonElement>) => {
+     const handleCancel = () => {
             setFormData({ title: "", description: "" ,status:"Pending"})
         }
 
@@ -170,7 +170,7 @@ export const EditTask = () => {
                 {/* Buttons */}
                 <div className="formbtns">
                     <div className="cancel">
-                        <button className="cancelbtn" type="button" onClick={(e) => handleCancel(e)} >Cancel</button>                        </div>
+                        <button className="cancelbtn" type="button" onClick={() => handleCancel()} >Cancel</button>                        </div>
                     {error && (
                         <div className="cancel">
                             <p style={{ color: "red", fontSize: "12px" }}>{error}</p>

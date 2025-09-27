@@ -32,7 +32,7 @@ export const AddTaskForm = () => {
         setFormData({ title: "", description: "" })
     }
 
-     const handleCancel = (e: React.MouseEvent<HTMLButtonElement>) => {
+     const handleCancel = () => {
         setFormData({ title: "", description: "" })
     }
 
@@ -62,7 +62,7 @@ export const AddTaskForm = () => {
                 </div>
                 <div className="formbtns">
                     <div className="cancel">
-                        <button className="cancelbtn" type="button"  onClick={(e) => handleCancel(e)} >Cancel</button>
+                        <button className="cancelbtn" type="button"  onClick={() => handleCancel()} >Cancel</button>
                     </div>
                     <div className="add" >
                         <Button className="addbtn" type="submit">ADD</Button>
