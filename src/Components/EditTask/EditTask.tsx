@@ -5,6 +5,7 @@ import "./EditTask.css";
 import { useParams } from "react-router-dom";
 import { ChevronUp, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 type Formdata = {
     title: string;
@@ -13,6 +14,7 @@ type Formdata = {
 };
 
 export const EditTask = () => {
+    const nav = useNavigate();
     const { id } = useParams<{ id: string }>();
     const [isOpen, setOpen] = useState<boolean>(false);
     const [clicked, setClicked] = useState(false);
@@ -67,6 +69,7 @@ export const EditTask = () => {
             });
             localStorage.setItem("tasks", JSON.stringify(new_tasks));
             setFormData({ title: "", description: "", status: "" });
+            nav('/');
         }
     };
 

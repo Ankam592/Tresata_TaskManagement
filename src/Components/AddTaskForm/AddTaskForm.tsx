@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Input } from "../Input/Input";
 import { Button } from "../Button/Button";
 import './AddTaskForm.css'
+import { useNavigate } from "react-router-dom";
 
 type Formdata =
     {
@@ -9,6 +10,7 @@ type Formdata =
         description: string
     }
 export const AddTaskForm = () => {
+    const nav = useNavigate();
     const [formdata, setFormData] = useState<Formdata>(
         {
             title: "",
@@ -30,6 +32,8 @@ export const AddTaskForm = () => {
         tasks.push(task_add)
         localStorage.setItem("tasks", JSON.stringify(tasks))
         setFormData({ title: "", description: "" })
+        nav('/');
+
     }
 
      const handleCancel = () => {
