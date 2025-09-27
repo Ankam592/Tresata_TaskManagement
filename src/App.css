@@ -1,0 +1,30 @@
+#root,html,body
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main
+{
+  height: auto;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 31px;
+  
+}
+
+.app
+{
+  flex : 1 1 414px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  flex-wrap : wrap;
+}
+

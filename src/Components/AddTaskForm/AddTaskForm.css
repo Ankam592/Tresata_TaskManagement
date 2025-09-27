@@ -1,0 +1,107 @@
+
+
+.addTask {
+    height: auto;
+    width: auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.title_div,.desc_div,
+.formbtns {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    margin: 5px;
+}
+
+
+
+.searchinput {
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    height: 30px;
+    width: 100%;
+    padding: 0px 13px;
+
+}
+
+.descinput
+{
+     border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    height: 71px;
+    width: 100%;
+    padding:16px 13px;
+   
+    margin-bottom: 10px;
+}
+
+.searchinput::placeholder,.descinput::placeholder {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #66676B;
+
+}
+
+.formbtns
+{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cancel,.add
+{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 40px;
+}
+
+.cancelbtn
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border:1px solid #034EA2;
+    border-radius: 5px;
+    color: #034EA2;
+    background-color: #FFFFFF;
+}
+
+.addbtn
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border:1px solid #034EA2;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #034EA2;
+}
+
+textarea {
+  padding-top: 10px; /* pushes text + placeholder down */
+}

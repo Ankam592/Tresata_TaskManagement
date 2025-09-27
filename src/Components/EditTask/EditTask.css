@@ -1,0 +1,181 @@
+.addTask {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Title, description, buttons wrapper */
+.title_div,
+.desc_div,
+.formbtns {
+  width: 100%;
+  margin: 5px 0;
+}
+
+/* Input fields */
+.searchinput {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  height: 30px;
+  width: 100%;
+  padding: 0 13px;
+}
+
+.descinput {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px 13px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.searchinput::placeholder,
+.descinput::placeholder,
+textarea::placeholder {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #66676b;
+}
+
+/* Status wrapper so dropdown is positioned relative */
+.status_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Status field (clickable box) */
+.status_div {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 13px;
+  margin: 5px 0;
+  cursor: pointer;
+  max-width:  100%;
+  background: #fff;
+}
+
+/* Floating dropdown */
+.taskstatus_dropdown {
+  position: absolute;
+  top: 100%; /* directly below status_div */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 100; /* stays on top of buttons */
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Status options */
+.pending,
+.progress,
+.completed {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.pending:hover,
+.progress:hover,
+.completed:hover {
+  background-color: #f7f7f7;
+}
+
+/* Circle colors */
+.status_color,
+.status_color_pending,
+.status_color_progress,
+.status_color_completed {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.status_color {
+  background-color: #d0d0d0;
+}
+
+.status_color_pending {
+  background-color: #d0d0d0;
+}
+
+.status_color_progress {
+  background-color: #ffb03c;
+}
+
+.status_color_completed {
+  background-color: #368a04;
+}
+
+/* Status label */
+.status_ {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.status_ p {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #231f20;
+}
+
+/* Buttons */
+.formbtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancel,
+.add {
+  width: 110px;
+  height: 40px;
+}
+
+.cancel p {
+  margin: 0;
+  color: red;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.cancelbtn {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #034ea2;
+  border-radius: 5px;
+  color: #034ea2;
+  background-color: #fff;
+}
+
+.addbtn {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #034ea2;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #034ea2;
+}

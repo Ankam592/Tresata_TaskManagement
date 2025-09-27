@@ -1,0 +1,140 @@
+.tasks {
+    display: flex;
+    flex: 1 0 382px;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    gap:20px;
+
+
+}
+
+.search_input_div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DDDDDD;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.search_icon {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+
+}
+
+.search_input {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    margin: 5px;
+}
+
+
+
+.searchfilter {
+    border: none;
+    height: 40px;
+    width: 100%;
+
+}
+
+.searchfilter::placeholder {
+    font-family: Lato;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+    color: #66676B;
+}
+
+
+
+.Tasklist {
+    flex: 1 1 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:15px
+}
+
+.InProgress,.Pending,.Completed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #F3F6F9;
+    padding: 10px;
+    border: 1px solid #F3F6F9;
+    border-radius: 3px;
+}
+
+.inleft {
+    width: 90px;
+    height: 16px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.inright
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12px;
+    height: 6px;
+    padding-right: 6px;
+}
+
+.progress_count,.pending_count,.completed_count {
+    font-family: Jost;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #231F20;
+    margin: 0;
+
+}
+
+.task_div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.addTaskin
+{
+    z-index: 50px;
+    position: fixed;
+    bottom: 31px;
+    right: 31px;
+    border-radius: 50%;
+    background-color: #034EA2;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+
+}
